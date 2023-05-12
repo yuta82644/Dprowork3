@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  background-image: url(/img/scott-webb-hDyO6rr3kqk-unsplash.jpg);
+  background-size: cover;
+  height: 600px;
+
+}
+input {
+  font-size: 200%;
+}
+
+.mein-title {
+  font-size: 7rem;
+  margin-bottom: 40px;
+  padding: 40px;
+  color: rgb(89, 52, 25);
+  
+}
+form div {
+  margin-bottom: 7rem;
+  margin-left: 3rem;
+}
+
+.label {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+  color:rgb(89, 52, 25); ;
+
+}
+
+.textarea {
+  width: 400px;
+  border: 1px  ;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+
+textarea {
+  width: 400px;
+font-size: 200%;
+  border: 1px  ;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
