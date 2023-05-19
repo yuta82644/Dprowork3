@@ -1,15 +1,19 @@
 html {
   font-size: 62.5%;
-  height: 100%;
+ 
 }
 
-body {
-  width: 960px;
+.wrapper {
+  max-width: 2000px;
   margin: 0 auto;
-  background-image: url(/img/scott-webb-hDyO6rr3kqk-unsplash.jpg);
-  background-size: cover;
-  height: 600px;
+}
 
+.img {
+  background-image: url(/img/scott-webb-hDyO6rr3kqk-unsplash.jpg);
+  background-position: center ;
+  background-size: cover;
+
+  
 }
 input {
   font-size: 200%;
@@ -20,36 +24,90 @@ input {
   margin-bottom: 40px;
   padding: 40px;
   color: rgb(89, 52, 25);
-  
 }
 form div {
-  margin-bottom: 7rem;
+  margin-bottom: 0;
   margin-left: 3rem;
 }
 
 .label {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   display: block;
-  color:rgb(89, 52, 25); ;
-
+  color: rgb(89, 52, 25);
 }
 
 .textarea {
-  width: 400px;
-  border: 1px  ;
+  width: 200px;
+  border: 1px;
   border-radius: 5px;
   padding: 10px;
-  
 }
 
-
 textarea {
-  width: 400px;
-font-size: 200%;
-  border: 1px  ;
+  width: 200px;
+  font-size: 200%;
+  border: 1px;
   border-radius: 5px;
   padding: 10px;
+  margin-bottom: 30px;
+}
+
+.page-header {
+  height: 70px;
+  background-color: darkgoldenrod;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+  list-style: none;
+  margin-left: 50px;
+  color: aliceblue;
   
+
+}
+
+.main-nav li {
+  font-size:  3rem;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+footer {
+  background-color: rgb(124, 187, 108);
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+footer p {
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+#accordion {
+  width: 100%;
+
+}
+#accordion dt {
+  border-bottom: solid 1px rgb(225, 146, 28);
+  background-color: #d6ab35;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(150, 77, 25);
+  text-align: center;
+  font-size: 2rem;
+}
+
+#accordion dd {
+  border: solid 1px #ccc;
+  margin: 0px;
+  padding: 10px;
+  color: coral;
+  text-align: center;
+
 }
 

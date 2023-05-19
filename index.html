@@ -1,32 +1,89 @@
 <!DOCTYPE html>
 <html lang="jp">
-<head>
-  <meta charset="UTF-8">
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/style.css">
-  <title>お問い合わせ</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>お問い合わせ</title>
+  </head>
+  <body>
+    <div class="img wrapper">
+      <header class="page-header wrapper">
+        <nav>
+          <ul class="main-nav">
+            <li>Home</li>
+            <li>Access</li>
+            <li>content</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="aco">
 
-<div>
-  <h1 class="mein-title">Contact us</h1>
-</div>
+        <dl id="accordion">
+          <dt>観葉</dt>
+          <dd>観葉植物</dd>
+          <dt>観葉</dt>
+          <dd>観葉植物</dd>
+          <dt>観葉植物</dt>
+          <dd>果肉植物</dd>
+          <dt>パキラ</dt>
+          <dd>アルテシマ</dd>
+        </dl>
+      </div>
+      <div>
+        <h1 class="mein-title">Contact us</h1>
+      </div>
 
-<div class="contact">
-  <form action="">
-    <div>
-      <label  class="label">お名前</label>
-      <input type="text" class="textarea">
+      <div class="contact wrapper">
+        <form action="">
+          <div>
+            <label class="label">お名前</label>
+            <input type="text" class="textarea" />
+          </div>
+          <div>
+            <label class="label">メールアドレス</label>
+            <input type="email" class="textarea" />
+          </div>
+          <div>
+            <label class="label">お問い合わせ</label>
+            <textarea cols="70" rows="4"></textarea>
+          </div>
+        </form>
+      </div>
     </div>
-    <div>
-      <label class="label">メールアドレス</label>
-      <input type="email" class="textarea">
-    </div>
-    <div>
-      <label class="label">お問い合わせ</label>
-    <textarea  cols="70" rows="4"></textarea>
-    </div>
-  </form>
-</div>
-</body>
+
+    <footer>
+      <div class="wrapper">
+        <p>観葉植物</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+</script>
+
+<script>
+$(function() {
+  $('#accordion dd').hide();
+  $('#accordion dt').on('click', function(){
+    $(this).next('dd').slideToggle();
+  });
+});
+
+
+
+// $(function() {
+//       $('h1').on('click', function() {
+//         $(this).css('color', 'wheat');
+//       });
+//     });
+// $(function() {
+//       $('h1').on('click', function() {
+//         $(this).css('color', '');
+//       });
+//     });
+
+
+
+</script>
+  </body>
 </html>
